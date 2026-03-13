@@ -133,11 +133,11 @@
             </p>
             <p>
               My research interests include AI for EDA, graph neural networks, hardware acceleration,
-              and digital IC design. I am particularly interested in how machine learning methods can
+              and Deep Learning. I am particularly interested in how machine learning methods can
               be applied to circuit and system-level optimization problems.
             </p>
             <p>
-              I am currently building my background in machine learning, computer architecture, and
+              I am currently building my background in Machine Learning for EDA, Deep Learning accelerator, and
               hardware-oriented system design, with a strong interest in future research on AI
               accelerators and EDA-related topics.
             </p>
@@ -183,9 +183,109 @@
 
             <!-- Projects -->
             <h2 id="projects" style="margin-bottom: 25px;">Projects</h2>
-            <p>
-              Project details will be updated here soon.
-            </p>
+            <!-- Projects -->
+<h2 id="projects" style="margin-bottom: 25px;">Projects</h2>
+
+<article class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Approximate Computing based on FPGA</b>
+        <span style="float:right;"><b>Guangzhou, CHN</b></span><br>
+        <i>Independent researcher</i>
+        <span style="float:right;"><i>July 2025 - Present</i></span>
+      </p>
+      <ul>
+        <li>Re-implemented and analyzed multiple low-precision and approximate arithmetic formats (SFP, LPFP) on FPGA to evaluate their impact on performance, accuracy, and hardware cost.</li>
+        <li>Compared different approximation strategies across CNN workloads, focusing on error propagation and application sensitivity rather than raw throughput only.</li>
+        <li>Identified limitations of existing formats and explored new approximate computation schemes targeting improved accuracy-efficiency trade-offs.</li>
+        <li>Ongoing work aims to utilize these computing formats in the Quamba hardware accelerator.</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Course Project for Digital Integrated Circuit</b>
+        <span style="float:right;"><b>Guangzhou, CHN</b></span><br>
+        <i>Student researcher</i>
+        <span style="float:right;"><i>April 2025 - June 2025</i></span>
+      </p>
+      <ul>
+        <li>Used Cadence Virtuoso to implement a computing unit that realizes a given function, and verified the RTL/code-level design through AMS simulation.</li>
+        <li>Used Design Compiler to compile the gate-level netlist under given constraints, and estimated area, power consumption, and timing margin.</li>
+        <li>Used Innovus to generate the layout automatically, and ensured sufficient timing margin after layout completion.</li>
+        <li>Performed layout circuit diagram comparison, rule checking, and post-simulation (LVS, DRC, AMS) to verify correctness after layout generation.</li>
+        <li>Built a ring oscillator as a clock using Cadence Virtuoso.</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Bachelor’s thesis on the Design and Approximate Computation Methods of Quamba-based SSM & Linear Projection Hardware Accelerators</b>
+        <span style="float:right;"><b>Stockholm, Sweden</b></span><br>
+        <i>Bachelor’s thesis</i>
+        <span style="float:right;"><i>Dec 2025 - May 2026</i></span>
+      </p>
+      <ul>
+        <li>Built a Docker + CUDA environment and successfully ran Quamba on a GPU, becoming familiar with its SSM (State Space Model) and Linear Projection computation flow for later hardware implementation.</li>
+        <li>Designed and implemented matrix accumulation, state update, and linear transformation units for FP16, FP32, and INT8 on FPGA.</li>
+        <li>Generated deterministic inputs and expected outputs using Python to construct hardware verification test cases, then loaded data onto hardware and restarted computation to ensure the FP16 unit outputs were consistent with Python benchmarks.</li>
+        <li>Tested post-layout simulation results and checked whether parameters still satisfied the requirements.</li>
+        <li>Incorporated optional approximation strategies into the hardware units and analyzed the impact of different approximation strategies on intermediate results and final output.</li>
+        <li>Compared hardware FP16, FP32, INT8, and approximate calculation results, and evaluated error indicators such as SSE and MSE.</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Course Project of ASIC & FPGA</b>
+        <span style="float:right;"><b>Stockholm, Sweden</b></span><br>
+        <i>Student researcher</i>
+        <span style="float:right;"><i>Oct 2025 - Jan 2026</i></span>
+      </p>
+      <ul>
+        <li>Worked on a Dynamically Reconfigurable Resource Array (DRRA) fabric with an associated Distributed Memory Architecture (DiMArch), targeting coarse-grained reconfigurable computing.</li>
+        <li>Performed RTL simulation and functional verification of a large hierarchical design using QuestaSim, validating DPU operations and inter-tile dataflow.</li>
+        <li>Conducted logic synthesis using Synopsys Design Compiler, comparing flat vs. bottom-up synthesis flows, and analyzed PPA trade-offs under different timing constraints.</li>
+        <li>Implemented physical design with Cadence Innovus, including flat physical synthesis, floorplanning, and hierarchical physical synthesis with partition reuse.</li>
+        <li>Investigated the impact of hierarchical partitioning and placement reuse on timing, area, and routability in a tiled accelerator architecture.</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+<article class="columns">
+  <div class="column">
+    <div class="content">
+      <p>
+        <b>Course Project of ASIC & FPGA</b>
+        <span style="float:right;"><b>Guangzhou, CHN</b></span><br>
+        <i>Student researcher</i>
+        <span style="float:right;"><i>April 2025 - June 2025</i></span>
+      </p>
+      <ul>
+        <li>Designed and implemented a classical Miller-compensated two-stage CMOS operational amplifier, including bias network, differential input stage, and gain stage.</li>
+        <li>Performed top-down architecture selection and bottom-up transistor-level sizing to simultaneously satisfy gain, bandwidth, stability, and power constraints.</li>
+        <li>Analyzed and optimized gain-bandwidth product (GBW) and phase margin through compensation capacitor and bias current trade-offs.</li>
+        <li>Evaluated power-performance trade-off using FOM = GBW / I<sub>DC</sub>, achieving &gt; 0.10 MHz/μA under post-layout conditions.</li>
+        <li>Completed compact rectangular layout with matched devices and symmetric routing to minimize mismatch and parasitics.</li>
+        <li>Performed full DRC, LVS, and PEX, and verified performance degradation after parasitic extraction.</li>
+      </ul>
+    </div>
+  </div>
+</article>
 
             <!-- CV -->
             <h2 id="cv" style="margin-bottom: 25px;">CV</h2>
